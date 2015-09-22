@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "proxima-nova", sans-serif;
+  background-color: #048ab3; }
+
+a {
+  text-decoration: none; }
+
+.b-logo {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 10px; }
+
+.b-textfield {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0;
+  width: 100%;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1); }
+  .b-textfield:focus {
+    outline: none; }
+  @media (max-width: 600px) {
+    .b-textfield {
+      display: block; } }
+
+.b-textfield::-webkit-input-placeholder {
+  color: white; }
+
+.b-textfield:-moz-placeholder {
+  color: white; }
+
+.b-textfield::-moz-placeholder {
+  color: white; }
+
+.b-textfield:-ms-input-placeholder {
+  color: white; }
+
+.b-button {
+  width: 100%;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
+  @media (max-width: 600px) {
+    .b-button {
+      display: block; } }
+
+.b-button.m-naked {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.3) !important;
+  box-shadow: none; }
+
+.b-checkbox {
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: .5px; }
+  .b-checkbox input[type="checkbox"] {
+    margin-right: 10px; }
+
+.b-onboarding {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh; }
+  .b-onboarding header {
+    height: 15vh; }
+  .b-onboarding section {
+    flex: 1; }
+  .b-onboarding .e-onboarding-message {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin: 20px 30px; }
+  .b-onboarding.m-signup-confirmation .e-onboarding-message {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    margin-top: 120px; }
+  .b-onboarding .e-onboarding-form {
+    padding: 0 30px; }
+    .b-onboarding .e-onboarding-form .b-button {
+      margin-top: 40px;
+      margin-bottom: 20px; }
+  .b-onboarding .e-password-reminder {
+    margin-top: 20px;
+    color: white;
+    display: inline-block; }
+  .b-onboarding .e-signup {
+    padding: 20px 30px;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); }
+    .b-onboarding .e-signup a {
+      color: white;
+      font-weight: 600;
+      text-decoration: none; }
+  .b-onboarding .e-confirmed {
+    font-size: 48px;
+    margin: 20px 0 0; }
+  .b-onboarding .e-category-menu {
+    padding: 20px 30px 0; }
+    .b-onboarding .e-category-menu .e-category {
+      box-sizing: border-box;
+      display: inline-block;
+      padding: 30px 0;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 2px 0;
+      width: calc(50% - 10px);
+      color: white;
+      font-size: 16px;
+      height: 110px;
+      vertical-align: middle; }
+  .b-onboarding .e-signup-progress {
+    height: 7vh; }
+    .b-onboarding .e-signup-progress span {
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.5);
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      vertical-align: middle; }
+    .b-onboarding .e-signup-progress .m-current {
+      background-color: white;
+      height: 16px;
+      width: 16px; }
+
+.ui-bg {
+  width: 100%; }
+
+.b-onboarding-questions {
+  position: absolute;
+  top: 8vh;
+  left: 7%;
+  width: 82%; }
+  .b-onboarding-questions .e-card {
+    text-align: center;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    padding-bottom: 30px; }
+    .b-onboarding-questions .e-card .e-card-category {
+      background-color: #ed5c42;
+      margin-top: 0;
+      padding: 6px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 16px; }
+    .b-onboarding-questions .e-card form {
+      margin-left: 20px;
+      margin-right: 20px; }
+    .b-onboarding-questions .e-card .e-question {
+      font-size: 18px;
+      margin: 30px 20px; }
+    .b-onboarding-questions .e-card .b-button {
+      margin-bottom: 10px;
+      color: white; }
+    .b-onboarding-questions .e-card .b-button.m-guide {
+      background-color: #523080; }
+    .b-onboarding-questions .e-card .b-button.m-do {
+      background-color: #008793; }
+    .b-onboarding-questions .e-card .b-button.m-connect {
+      background-color: #d9b549; }
+    .b-onboarding-questions .e-card .b-button.m-learn {
+      background-color: #ed5c42; }
+    .b-onboarding-questions .e-card .b-button.m-skip {
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.3) !important;
+      box-shadow: none; }
+  .b-onboarding-questions .e-card:first-of-type {
+    z-index: 100; }
+  .b-onboarding-questions .e-card:nth-of-type(2) {
+    z-index: 99;
+    transform: translate(10px, 10px); }
+  .b-onboarding-questions .e-card:nth-of-type(3) {
+    z-index: 98;
+    transform: translate(20px, 20px); }
+
+/*# sourceMappingURL=styles.css.map */
