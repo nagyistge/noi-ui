@@ -5,7 +5,7 @@
     flex-flow: column;
     min-height: 100vh;
 
-    header { height: 15vh;}
+    header { height: 12vh;}
     section { flex:1; }
 
 
@@ -25,13 +25,13 @@
         padding:  0 30px;
 
         .b-button {
-            margin-top: 40px;
-            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
 
         .b-textfield,
         .b-dropdown {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
     }
 
