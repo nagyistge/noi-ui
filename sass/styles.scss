@@ -59,12 +59,13 @@ body {
 @import 'components';
 @import 'nav';
 @import 'profile';
-
-
+@import 'alert-messages';
+@import 'footer-message';
 
 // Pages
 @import 'onboarding';
 @import 'activity';
+@import 'profile-progress';
 
 
 

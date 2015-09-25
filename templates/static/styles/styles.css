@@ -12,7 +12,8 @@ p {
   color: rgba(0, 0, 0, 0.8); }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 .b-logo {
   color: rgba(255, 255, 255, 0.4);
@@ -219,6 +220,46 @@ a {
     height: 40px;
     opacity: .2; }
 
+.b-alert-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+  .b-alert-message .material-icons {
+    font-size: 32px; }
+  .b-alert-message p {
+    color: white; }
+
+.b-alert-message.m-error {
+  background-color: #9d3838; }
+
+.b-alert-message.m-success {
+  background-color: #497f49; }
+
+.b-alert-message.m-warning {
+  background-color: #d9b549; }
+
+.m-hide {
+  display: none; }
+
+.b-footer-message {
+  padding: 20px 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .b-footer-message h3 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    font-size: 16px; }
+  .b-footer-message p {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 200;
+    line-height: 1.6; }
+
 .b-onboarding {
   text-align: center;
   color: white;
@@ -398,5 +439,50 @@ a {
   color: rgba(0, 0, 0, 0.4); }
   .b-activity-feed .e-actions:hover {
     color: #048ab3; }
+
+.b-profile-progress .e-progress-container {
+  margin: 0;
+  padding: 0; }
+.b-profile-progress .e-progress-item {
+  list-style: none;
+  position: relative; }
+  .b-profile-progress .e-progress-item a {
+    padding: 15px 20px;
+    display: block; }
+    .b-profile-progress .e-progress-item a:nth-of-type(even) {
+      background-color: rgba(0, 0, 0, 0.05); }
+    .b-profile-progress .e-progress-item a:after {
+      color: rgba(0, 0, 0, 0.2);
+      font-family: 'Material Icons';
+      font-style: normal;
+      font-weight: 400;
+      content: '\E5C8';
+      font-size: 24px;
+      position: absolute;
+      right: 10px; }
+  .b-profile-progress .e-progress-item .e-questions-left {
+    position: absolute;
+    right: 46px;
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 17px 0;
+    top: 0; }
+  .b-profile-progress .e-progress-item[data-questions-left="0"] {
+    color: white; }
+    .b-profile-progress .e-progress-item[data-questions-left="0"] .e-bar {
+      background-color: #497f49 !important;
+      width: 100%; }
+    .b-profile-progress .e-progress-item[data-questions-left="0"] .e-questions-left {
+      display: none; }
+    .b-profile-progress .e-progress-item[data-questions-left="0"] a:after {
+      content: '\E876'; }
+  .b-profile-progress .e-progress-item:not([data-progress='0']) .e-bar {
+    position: absolute;
+    background-color: #048ab3;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1; }
 
 /*# sourceMappingURL=styles.css.map */
